@@ -26,6 +26,7 @@ $print = new Yprint();
 $content ='周黑鸭        1份          10.00';
 $apikey = "xxxxxxxxx";
 $msign = 'xxxxxxxx';
+
 ###打印
 /**
  * @param  int $partner     用户ID
@@ -34,7 +35,9 @@ $msign = 'xxxxxxxx';
  * @param  string $apiKey       API密钥
  * @param  string $msign       打印机密钥
  */
+
 echo $print->action_print(626,'xxxxxxxxx',$content,$apikey,$msign);
+
 ###添加打印机
 /**
  * @param  int $partner     用户ID1		
@@ -45,6 +48,7 @@ echo $print->action_print(626,'xxxxxxxxx',$content,$apikey,$msign);
  * @param  string $apiKey       API密钥
  * @param  string $msign       打印机密钥
  */
+ 
 echo $print->action_addprint(xxx,'xxx','ceshizhanghao','k2s测试','18111111111',$apikey,$msign);
 ###删除打印机
 /**
@@ -53,16 +57,20 @@ echo $print->action_addprint(xxx,'xxx','ceshizhanghao','k2s测试','18111111111'
  * @param  string $apiKey       API密钥
  * @param  string $msign        打印机密钥
  */
+
 echo $print->action_removeprinter(xxx,'xxx ',$apikey,$msign);
+
 ###添加应用菜单
+
 /**
- * @param  int $partner      用户ID
- * @param  string $machine_code 打印机终端号
+* @param  int $partner      用户ID
+* @param  string $machine_code 打印机终端号
  * @param  string $apiKey       API密钥
  * @param  string $msign        打印机密钥
  * @param  string $printmenu    json格式应用菜单
  * @return string               接口返回值
  */
+
 $printmenu = [urlencode('美团开店'),urlencode('http://www.10ss.net/uel?id=1')];
 $printmenu = urlencode(json_encode($printmenu,JSON_UNESCAPED_UNICODE));
 echo $print->action_addprintmenu(xxx,'xxx',$apikey,$msign,$printmenu);
