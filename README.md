@@ -3,8 +3,8 @@
 ##接口示例：
 include("print.class.php");
 $print = new Yprint();
-//<table><tr><td>菜名</td><td>分数</td><td>总价</td></tr>
-</tr></table>
+// `&#x3C;&#x74;&#x61;&#x62;&#x6C;&#x65;&#x3E;&#x3C;&#x74;&#x72;&#x3E;&#x3C;&#x74;&#x64;&#x3E;&#x83DC;&#x540D;&#x3C;&#x2F;&#x74;&#x64;&#x3E;&#x3C;&#x74;&#x64;&#x3E;&#x5206;&#x6570;&#x3C;&#x2F;&#x74;&#x64;&#x3E;&#x3C;&#x74;&#x64;&#x3E;&#x603B;&#x4EF7;&#x3C;&#x2F;&#x74;&#x64;&#x3E;&#x3C;&#x2F;&#x74;&#x72;&#x3E;
+    &#x3C;&#x2F;&#x74;&#x72;&#x3E;&#x3C;&#x2F;&#x74;&#x61;&#x62;&#x6C;&#x65;&#x3E; `
 /*$content = "@@2               食有材
 @@2订单编号：B16122211455970
 @@2下单时间：2016/12/22 11:45:59
@@ -40,7 +40,7 @@ echo $print->action_print(626,'xxxxxxxxx',$content,$apikey,$msign);
 
 ###添加打印机
 /**
- * @param  int $partner     用户ID1		
+ * @param  int $partner     用户ID		
  * @param  string $machine_code 打印机终端号
  * @param  string $username     用户名
  * @param  string $printname    打印机名称
