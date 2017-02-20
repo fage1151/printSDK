@@ -5,7 +5,7 @@ include("print.class.php");
 $print = new Yprint();
 
 //&lt; table>&lt; tr>&lt; td>菜名</td>&lt; td>分数</td>&lt; td>总价</td></tr>
-</tr></table>
+&lt; /tr>&lt; /table>
 
 /*$content = "@@2               食有材
 @@2订单编号：B16122211455970
