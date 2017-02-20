@@ -4,7 +4,7 @@
 include("print.class.php");
 $print = new Yprint();
 
-//&lt; table>&lt; tr>&lt; td>菜名</td>&lt; td>分数</td>&lt; td>总价</td></tr>
+//&lt; table>&lt; tr>&lt; td>菜名</td>&lt; td>分数</td>&lt; td>总价&lt; /td>&lt; /tr>
 &lt; /tr>&lt; /table>
 
 /*$content = "@@2               食有材
