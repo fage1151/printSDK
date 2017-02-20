@@ -3,7 +3,7 @@
 ##接口示例：
 include("print.class.php");
 $print = new Yprint();
-//<table><tr><td>菜名</td><td>分数</td><td>总价</td></tr>
+//&lt; table>&lt; tr>&lt; td>菜名</td>&lt; td>分数</td>&lt; td>总价</td></tr>
 </tr></table>
 /*$content = "@@2               食有材
 @@2订单编号：B16122211455970
