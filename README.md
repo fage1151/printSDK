@@ -3,8 +3,10 @@
 ##接口示例：
 include("print.class.php");
 $print = new Yprint();
+
 //&lt; table>&lt; tr>&lt; td>菜名</td>&lt; td>分数</td>&lt; td>总价</td></tr>
 </tr></table>
+
 /*$content = "@@2               食有材
 @@2订单编号：B16122211455970
 @@2下单时间：2016/12/22 11:45:59
@@ -23,8 +25,11 @@ $print = new Yprint();
 @@2手抓饼,手抓饼,10个/袋,1x100个
 @@2             105.00       1";*/
 //$content .='菜名          分数         价格';
+
 $content ='周黑鸭        1份          10.00';
+
 $apikey = "xxxxxxxxx";
+
 $msign = 'xxxxxxxx';
 
 ###打印
