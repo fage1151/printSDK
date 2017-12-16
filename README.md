@@ -5,6 +5,7 @@
 ## 接口示例：
 ```php
 include("print.class.php");
+
 $print = new Yprint();
 
 //<table><tr><td>菜名</td><td>分数</td><td>总价</td></tr></table>
