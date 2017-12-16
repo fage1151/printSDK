@@ -1,10 +1,11 @@
 # printSDK
 易联云开放接口PHP sdk
-##接口示例：
+## 接口示例：
+```php
 include("print.class.php");
 $print = new Yprint();
 
-//&lt; table>&lt;tr>&lt;td>菜名</td>&lt;td>分数</td>&lt;td>总价&lt;/td>&lt;/tr>&lt;/table>
+//<table><tr><td>菜名</td><td>分数</td><td>总价</td></tr></table>
 
 /*$content = "@@2               食有材
 @@2订单编号：B16122211455970
@@ -30,8 +31,9 @@ $content ='周黑鸭        1份          10.00';
 $apikey = "xxxxxxxxx";
 
 $msign = 'xxxxxxxx';
-
-###打印
+```
+### 打印
+```php
 /**
  * @param  int $partner     用户ID
  * @param  string $machine_code 打印机终端号
@@ -41,8 +43,9 @@ $msign = 'xxxxxxxx';
  */
 
 echo $print->action_print(626,'xxxxxxxxx',$content,$apikey,$msign);
-
-###添加打印机
+```
+### 添加打印机
+```php
 /**
  * @param  int $partner     用户ID		
  * @param  string $machine_code 打印机终端号
@@ -54,7 +57,9 @@ echo $print->action_print(626,'xxxxxxxxx',$content,$apikey,$msign);
  */
  
 echo $print->action_addprint(xxx,'xxx','ceshizhanghao','k2s测试','18111111111',$apikey,$msign);
-###删除打印机
+```
+### 删除打印机
+```php
 /**
  * @param  int $partner      用户ID
  * @param  string $machine_code 打印机终端号
@@ -63,9 +68,9 @@ echo $print->action_addprint(xxx,'xxx','ceshizhanghao','k2s测试','18111111111'
  */
 
 echo $print->action_removeprinter(xxx,'xxx ',$apikey,$msign);
-
-###添加应用菜单
-
+```
+### 添加应用菜单
+```php
 /**
 * @param  int $partner      用户ID
 * @param  string $machine_code 打印机终端号
@@ -78,3 +83,4 @@ echo $print->action_removeprinter(xxx,'xxx ',$apikey,$msign);
 $printmenu = [urlencode('美团开店'),urlencode('http://www.10ss.net/uel?id=1')];
 $printmenu = urlencode(json_encode($printmenu,JSON_UNESCAPED_UNICODE));
 echo $print->action_addprintmenu(xxx,'xxx',$apikey,$msign,$printmenu);
+```
